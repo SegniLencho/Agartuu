@@ -1,0 +1,18 @@
+.container{
+    padding-bottom: 30px;
+    padding-top: 30px;
+  
+  }
+
+  .featureContent{
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    color: red;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  ul{
+    text-align: center;
+
+  }

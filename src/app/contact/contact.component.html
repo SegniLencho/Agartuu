@@ -1,0 +1,81 @@
+<div class="content">
+    <h3 style="text-align: center; ">Guca Kana Guutuun Nu Quunnamaa</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-  col-md-4 col-sm-4 col-xs-12">
+                <div class="widget widget-contact">
+                    <!-- widget search -->
+                    <h3 class="widget-title">Bakka Itti Argamnu</h3>
+                    <address>
+                        <strong>Odaa Tower</strong>
+                        <br> 1955 Bells ferry RD
+                        <br> Atlanta, GA 30066
+                        <br>
+                        <small title="Lakkoofsa bilbilaa">Lakkofsa bilbilaa :</small> 641-919-8503
+                    </address>
+                    <address>
+                        <strong>Email'n Nu quunnamuuf</strong>
+                        <br>
+                        <a href="mailto:#">segnilencho@gmail.com</a>
+                    </address>
+                </div>
+                <!-- /.widget search -->
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-9">
+                        <form (ngSubmit)="onSubmit()" #myform="ngForm" novalidate>
+                            <div id="user-data">
+                                <div class="form-group">
+                                    <label for="maqaa">Maqaa </label>
+                                    <input type="text" required #name="ngModel"
+                                        [class.is-invalid]="name.invalid && name.touched " id="maqaa"
+                                        [(ngModel)]="userComment.name" name="maqaa" class="form-control">
+                                    <small class="text-danger" [class.d-none]="name.valid || name.untouched">Gucni Maqaa
+                                        kun guutamuu qaba</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email </label>
+                                    <input type="text" id="email" [(ngModel)]="userComment.email" name="email"
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yaada">Yaada Keessan </label>
+                                    <textarea id="yaada" required #yaada="ngModel"
+                                        [class.is-invalid]="yaada.invalid && yaada.touched "
+                                        [(ngModel)]="userComment.comment" name="yaada" class="form-control"
+                                        rows="3"></textarea>
+                                    <small class="text-danger" [class.d-none]="yaada.valid || yaada.untouched">Gucni
+                                        Yaadaa kun guutamuu qaba</small>
+
+                                </div>
+                            </div>
+                            <button [disabled]="myform.form   .invalid" class="btn btn-primary col-md-12"
+                                type="submit">Ergi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+       &nbsp;
+        <div class="row" style="display: block;" *ngFor="let comment of userComments">
+            <div *ngIf="userComments" class="col-xs-12 col-sm-10 col-md-10">
+                <div class="Paper-module--root--rGldT"
+                    style="background-color: rgb(255, 255, 255); padding: 28px 28px; display: block;">
+                    <div class="Comment-module--avatar--tDixR" style="display: block;"><img
+                            src="../../assets/userIcon.png" style="max-width: 50px ; max-height: 50px;"
+                            class="Comment-module--image--zfu07 img-responsive">
+                        <span id="commentMarginLeft">{{ comment.name }}</span>
+                    </div>
+                    <div class="Comment-module--content--3Ml7n" style="display: block;">
+                        <div>{{ comment.comment}}
+                        </div>
+                    </div>
+                    <small id="commentMarginLeft" class="font-weight-light">{{ comment.createdDate| date:'medium'}}</small>
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>

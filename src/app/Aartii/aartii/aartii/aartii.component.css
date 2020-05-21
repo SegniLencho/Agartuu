@@ -1,0 +1,40 @@
+.container {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#card {
+    text-align: center;
+    align-self: center;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+
+/* xs */
+
+img {
+    width: 160px;
+    height: auto;
+}
+
+
+/* sm */
+
+@media (min-width: 768px) {
+    img {
+        width: 140px;
+        height: auto;
+    }
+}
+
+#album-card {
+    font-weight: bold;
+}
+
+div {
+    padding: 5px;
+}

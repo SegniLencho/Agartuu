@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <div mySpy class="col-md-12" style="text-align: center;max-height: 90px; ">
+      <div class="g-ytsubscribe" data-channelid="UCEYgUk8YSAlMxXlHfehuimA" data-layout="full" data-count="default">
+      </div>
+    </div>
+    <div *ngFor="let video of videos" class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow vh-50">
+        <div class="card-body text-center">
+          <iframe style="width: 100%; height: 100%;" [src]=getEmbedUrl(video.id.videoId) frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">{{video.snippet.title}}
+            </a></h5>
+          <div class="card-text text-black-50">{{video.snippet.description.slice(0, 100)}}</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card-body text-center">
+        <app-hidhaa-dabalataa></app-hidhaa-dabalataa>
+      </div>
+    </div>
+  </div>
+
+</div>

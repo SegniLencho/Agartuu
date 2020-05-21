@@ -1,0 +1,33 @@
+.container{
+    padding-bottom: 30px;
+    padding-top: 30px;
+  
+  }
+
+  .featureContent{
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    color: red;
+   text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+
+  .story-body__unordered-list, .story-body__list-item {
+    margin-top: 16px;
+}
+ol, ul {
+  list-style: none;
+  text-align: left;
+}
+.story-body__link, .story-body__link-external {
+  border-bottom: 1px solid #dcdcdc;
+  color: #222;
+  font-weight: bold;
+}
+a:link {
+  -webkit-tap-highlight-color: rgba(17,103,168,0.3);
+}
+a:hover{
+  text-decoration: none;
+}

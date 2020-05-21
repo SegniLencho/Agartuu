@@ -1,0 +1,23 @@
+{
+    "database": {
+        "rules": "database"
+    },
+    "hosting": {
+        "site": "agartuuoromo",
+        "public": "public",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [{
+            "source": "**",
+            "destination": "/index.html"
+        }]
+    },
+    "emulators": {
+        "firestore": {
+            "port": "8080"
+        }
+    }
+}

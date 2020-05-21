@@ -1,0 +1,108 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+            <th style="text-decoration: underline;">Koroonaavaayiras: Gaaffiiwwan keessaniif deebi'ii</th>
+            <i class="fa fa-clock-o"></i><small> &nbsp; Eebila 12 2020</small>
+            <p style="padding: 5px;"></p>
+            <th dir="ltr">Haala Qilleensaa (Climate)</th>
+            <p>Lafa ho’aa ykn gammojjii keessa jiraachuun carraa koronaa vaayirasiitiin qabamuu hin hir’isu. Vaayirasiin kun haala qillensaa (climate) kamiyyuu keessatti nama irraa namatti daddarbuu ni danda’a. Haala qilleensaa qorraa/ cabbii keessa jiraachuunis
+                tatamsa’ina dhibee kanaa hin ittisu.</p>
+            <th> Dhugaatiin Aalkoolii dhibee kana ittisuu ykn fayyisuu danda’aa?
+            </th>
+            <p> <b>Lakki</b> Dhugaatiin Aalkoolii carraa dhibee Koronaa vaayirasiin qabamuu daran yoo dabale malee hin hir’isu. Kunis of eegganoo dhibee kana ittisuuf godhamuu qaban waan dagatamanif dha. Alkooliin dhiibewwan kan biroof nama saaxiluu danda’a.
+            </p>
+            <th>Namni dhibee Kanaan qabame hundi ni du’aa? </th>
+            <p><b>Lakki</b> Namni dhibee Kanaan qabame, mallattoo jabaa otoo hin agarsiisin guyyoota 2 hanga 14 turuu danda’a. yeroo kana keessatti vaayirasii kana nama biraatti daddabarsuus ni danda’a.</p>
+
+            <th>Dawaa yookaan talaalliin argameera?</th>
+            <p><b>Lakki</b> hanga ammaatti dawaa ykn talaalliin dhibee kanaaf argame hin jiru. Qorannoowwan hedduun bakka adda addaatti godhamaa jiran garuu abdachiisaa dha. </p>
+            <th>Qullubbii Adii nyaachuun hoo dhibee kana ittisuuf gargaraa?</th>
+            <p>Qullubbii Adiin fayyaa qaama namaaf gaarii akka tahe beekamaa dha. Garuu, hanga ammaatti dhibee koronaa vaayirasii ittisuus ta’e fayyisuu akka danda’u wanti qorannoodhaan bira ga’ame hin jiru. </p>
+            <th>Dhibee kana ofirraa ittisuun in danda’amaa?</th>
+            <p><b style="color: green;">Eeyyen</b> dhibee kana ofirraa ittisuuf:</p>
+            <ol>
+                <li>
+                    <p>Harka keessan ammaa amma dhiqadhaa</p>
+
+                </li>
+                <li>
+                    <p>Harkaan afaan, funyaanii fi fuula tuttuquu hir’isaa</p>
+
+                </li>
+                <li>
+                    <p>Nama irraa qaamaan fagaadhaa</p>
+
+                </li>
+                <li>
+                    <p>Dirqama yoo tahe malee, sochii keessan hir’isaa yookaan manaa hin bahinaa</p>
+                </li>
+            </ol>
+            <th>Madda odeeffannoo</th>
+            <p>Marsaariitii dhaabbatta fayyaa idil Addunyaa (WHO ) fi dhaabbata ittissa dhibee daddarboo biyya Ameerikaa (CDC) irraa cuurame. Odeeffannoo dabalataaf hidha( link) armaan gadhii ilalaa.
+            </p>
+            <ol>
+                <li>
+                    <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/">Gabaasa guutuu CDC 'f hidhaa kana hordofaa</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">Gabaasa guutuu WHO 'f hidhaa kana hordofaa</a>
+                    </p>
+                </li>
+            </ol>
+            <p style="text-align: center;">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.Agartuu.com%2Ffayyaa%2Fodeefannoo-dabalataa-corona&width=141&layout=button_count&action=like&size=large&share=true&height=46&appId=3268523619843425" width="141" height="46"
+                    style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+            <div style="text-align: right;">
+                <p>Qindeessaan: Bedilu G</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <li class="story-body__list-item"> <a class="story-body__link" routerLink="/fayyaa" routerLinkActive="active">
+                    Of eegannoo godhamuu qabu</a></li>
+            <div class="col-md-8">
+                <a href="/fayyaa"> <img class="img-responsive" src="../../assets/fayyaa/corona-cover.jpg" alt="Suura Corona vaayirasii" style="width: 450px;height: 200px; max-width: 100%;"> </a>
+
+                <li class="story-body__list-item"> <a class="story-body__link" routerLink="/fayyaa" routerLinkActive="active">
+                        Koroonaan lubbuu meeqa galaafate? </a></li>
+            </div>
+        </div>
+    </div>
+    <!-- Use comment form here -->
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+            &nbsp;
+            <form [formGroup]="commentFormGroup" (ngSubmit)="submit()">
+                <app-reusable-comment formControlName="commentForm"></app-reusable-comment>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+            <button [disabled]="!commentFormGroup.valid" class="btn btn-primary col-md-12" (click)="submit()" type="submit"> Ergi</button> &nbsp;
+        </div>
+        <div class="col-md-3">
+            <button (click)="resetForm()" class="btn btn-danger col-md-12" type="submit">Haqi </button>
+        </div>
+    </div>
+    &nbsp;
+    <div class="row" *ngFor="let comment of userComments">
+        <div class="col-md-2"></div>
+        <div *ngIf="userComments" class="col-xs-12 col-md-6">
+            <div class="Paper-module--root--rGldT" style="background-color: rgb(255, 255, 255); padding: 28px 28px; display: block;">
+                <div class="Comment-module--avatar--tDixR" style="display: block;"><img src="../../assets/userIcon.png" style="max-width: 50px ; max-height: 50px;" class="Comment-module--image--zfu07 img-responsive">
+                    <span id="commentMarginLeft">{{ comment.name }}</span>
+                </div>
+                <div class="Comment-module--content--3Ml7n" style="display: block;">
+                    <div>{{ comment.comment}}
+                    </div>
+                </div>
+                <small id="commentMarginLeft" class="font-weight-light">{{ comment.createdDate| date:'medium'}}</small>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>

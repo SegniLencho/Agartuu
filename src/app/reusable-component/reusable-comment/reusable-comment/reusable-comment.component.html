@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-xs-12 col-md-12">
+        <p style="text-align: center; font-size: 18px;">Yaada Keessan nu beeksisaa</p>
+        <div [formGroup]="form">
+            <div id="user-data">
+                <div class="form-group">
+                    <label for="maqaa">Maqaa </label>
+                    <input type="text" formControlName="maqaa" id="maqaa" class="form-control">
+                    <div *ngIf="maqaaControl.touched && maqaaControl.hasError('required')" class="text-danger">
+                        gucni
+                        maqaa kun guutamuu qaba!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="text" formControlName="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="yaada">Yaada Keessan </label>
+                    <textarea id="yaada" formControlName="yaada" class="form-control" rows="3"></textarea>
+                    <div *ngIf="yaadaControl.touched && yaadaControl.hasError('required')" class="text-danger">
+                        gucni yaadaa kun guutamuu qaba
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Comment Displaying component  -->
+
+<!-- 
+<div class="row" *ngFor="let comment of userComments">
+    <div class="col-md-2"></div>
+    <div class="col-xs-12 col-md-12">
+        <div class="Paper-module--root--rGldT"
+            style="background-color: rgb(255, 255, 255); padding: 28px 28px; display: block;">
+            <div class="Comment-module--avatar--tDixR" style="display: block;"><img src="../../assets/userIcon.png"
+                    style="max-width: 50px ; max-height: 50px;" class="Comment-module--image--zfu07 img-responsive">
+                <span id="commentMarginLeft">{{ comment.name }}</span>
+            </div>
+            <div class="Comment-module--content--3Ml7n" style="display: block;">
+                <div>{{ comment.comment}}
+                </div>
+            </div>
+            <small id="commentMarginLeft" class="font-weight-light">{{ comment.createdDate| date:'medium'}}</small>
+        </div>
+        <br />
+    </div>
+</div> -->

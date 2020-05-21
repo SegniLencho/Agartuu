@@ -1,0 +1,224 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <div [ngStyle]="sideStyle" id="mySidenav" (click)="onClick($event)" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+                <a href="/fayyaa/odeefannoo-dabalataa-corona">Gaaffiiwwan keessaniif dee'ii</a>
+            </div>
+
+            <div [ngStyle]="mainStyle">
+                <span style="font-size:14px;cursor:grabbing; padding: 6px 8px;" (click)="openNav()">&#9776;
+                    Dabalatan</span>
+            </div>
+            <p style="padding: 10px;">&nbsp;</p>
+        </div>
+        <div class="col-md-6">
+            <h5>COVID -19(Corona)
+            </h5>
+            <i class="fa fa-clock-o"></i><small> &nbsp; Eebila 12 2020</small>
+            <p> <b>Odeefannoon kun Sa'aati 1 keessatti si'a 4 haarefama</b></p>
+            <table class="GeneratedTable">
+                <thead>
+                    <tr style="text-align: center;">
+                        <th colspan="4">Lakkofsa Namoota CovId-19 Miidhaman </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Biyyoota</b></td>
+                        <td><b>Kan Du'an </b> </td>
+                        <td><b>Kan Qabaman </b></td>
+                        <td><b>Kan Qabaamanii fayyan </b> </td>
+                    </tr>
+                    <tr *ngIf="globalData">
+                        <td><b>Adunyaa</b> </td>
+                        <td> {{ globalData[0].deaths}}</td>
+                        <td> {{ globalData[0].confirmed }}</td>
+                        <td> {{ globalData[0].recovered }}</td>
+
+                    </tr>
+                    <tr *ngIf="ethiopia">
+                        <td><b>Ethiopia</b></td>
+                        <td>{{ ethiopia[0].deaths}}</td>
+                        <td>{{ ethiopia[0].confirmed }}</td>
+                        <td> {{ ethiopia[0].recovered }}</td>
+
+                    </tr>
+                    <tr *ngIf="usa">
+                        <td><b>Ameerikaa (USA)</b></td>
+                        <td>{{ usa[0].deaths }}</td>
+                        <td>{{ usa[0].confirmed }}</td>
+                        <td> {{ usa[0].recovered }}</td>
+
+                    </tr>
+                    <tr *ngIf="spainData">
+                        <td><b>Ispeen (Spain)</b></td>
+                        <td>{{ spainData[0].deaths }}</td>
+                        <td>{{ spainData[0].confirmed }}</td>
+                        <td> {{ spainData[0].recovered }}</td>
+
+                    </tr>
+                    <tr *ngIf="italyData">
+                        <td><b>Xaaliyaan(Italy)</b></td>
+                        <td>{{ italyData[0].deaths}}</td>
+                        <td>{{ italyData[0].confirmed }}</td>
+                        <td> {{ italyData[0].recovered }}</td>
+                    </tr>
+                    <tr *ngIf="germanyData">
+                        <td><b>Jarman(Germany)</b></td>
+                        <td>{{ germanyData[0].deaths}}</td>
+                        <td>{{ germanyData[0].confirmed }}</td>
+                        <td> {{ germanyData[0].recovered }}</td>
+                    </tr>
+                    <tr *ngIf="franceData">
+                        <td><b>Farnsaay (France)</b></td>
+                        <td>{{ franceData[0].deaths}}</td>
+                        <td>{{ franceData[0].confirmed }}</td>
+                        <td> {{ franceData[0].recovered }}</td>
+                    </tr>
+                    <tr *ngIf="ukData">
+                        <td><b>Uk (Uk)</b></td>
+                        <td>{{ ukData[0].deaths}}</td>
+                        <td>{{ ukData[0].confirmed }}</td>
+                        <td> {{ ukData[0].recovered }}</td>
+                    </tr>
+                    <tr *ngIf="chinaData">
+                        <td><b>Chaayinaa (China)</b></td>
+                        <td>{{ chinaData[0].deaths}}</td>
+                        <td>{{ chinaData[0].confirmed }}</td>
+                        <td> {{ chinaData[0].recovered }}</td>
+                    </tr>
+                    <tr *ngIf="iranData">
+                        <td><b>Iraan (Iran)</b></td>
+                        <td>{{ iranData[0].deaths}}</td>
+                        <td>{{ iranData[0].confirmed }}</td>
+                        <td> {{ iranData[0].recovered }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="padding: 5px;"></p>
+
+            Maddi Odeefannoo kanaa <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic_by_country_and_territory">wikipedia</a>
+            <p style="padding: 5px;"></p>
+
+            <p>COVID -19(CORONA) dhukkuba yookaan vaayirasii yoo ta’u hamma har'aati guutuu Adunyaatti lubbuu namoota {{ globalData[0].deaths}} ol galaafatee jira. Namoota heeddun ammas buufata fayyaa garaagaraatti kan yaalamaa jiraniifii lakkofsi nama du’uu
+                akka dabalaa deemu himamaa jira. Dhukubni kun saffisaan nama irraa gara namaatti kan darbudha. Dhukkubni maqaan covid-19 jedhamu kennameef kun, sirna hargansuu miidhuun, ho'a qaamaafi qufaa gogaan nama eegala. Dhaabbanni Fayyaa Idil Addunyaa
+                (WHO) koronaavaayirasiin dhibee 'addunyaa weerare' ykn 'pandemic' jechuun labseera. </p>
+            <h5>Akkamiin ofirraa ittisuun danda’ama? </h5>
+            <ul>
+                <li>
+                    Harka ofii Saamunatiin yoo xiqqaate sekondii 20f dhiqachuu.
+                </li>
+                <li>
+                    Keemikaalota aalkoolii irra hojjetaman fayyadamuun harka ofii sukkuumachuu.
+                </li>
+                <li>
+                    Harka nama fuudhuu irraa of qosachuu.
+                </li>
+                <li>
+                    Namoonni dhukkuba kanaan qabaman ilaalanii addaan baasuun waan hin danda’amneef namoota baay’ee waliin walitti makamuu irraa of qusachuu.
+                </li>
+                <li>
+                    Namoota yeroo dhihootti biyyoota dhukkuba kanaan miidhaman dhaqanii deebi'an waliin wal quunnamuu irraa of eegachuu.
+                </li>
+                <li>
+                    Yeroo qufaatanis ta’e yeroo haxxifattan afaan keessan yoo danda'ame 'MASK' haguugachuu.
+                </li>
+                <li>
+                    Maaskii afaan irratti hidhachuu.
+                </li>
+                <li>
+                    Harka keessaniin fuula keessan, funyaan akkasumas afaan keessan tutuquu irraa of qusachuu.
+                </li>
+                <li>
+                    Walgahii garagaariifi mana amantaa iddoo namni baay’een walitti qabamee jiru dhaquu dhiisuu.
+                </li>
+            </ul>
+            <h5>Mallattoo dhukkuba Koroonaa
+            </h5>
+            <ul>
+                <li>
+                    Qufaasisuu
+                </li>
+                <li>
+                    Qaama hoo’isuu( fever)
+                </li>
+                <li>
+                    Afuura baafachuu dadhabuu
+                </li>
+
+            </ul>
+
+            <br />
+            <h5>Yoo qabameera jettani yaaddan. </h5>
+            <ul>
+                <li>
+                    Namoota irraa qofaatti of baasuu yookaan akka maatiitti qofaa ta’uu namoota biroo waliin ooluu yookaan buluu irraa of qusachu
+                </li>
+                <li>
+                    Osoo eegumsa fayyaa hin deemiin dura eegumsa fayyaaf bilbilanii beeksisuu
+                </li>
+            </ul>
+            <h5>Madda odeeffannoo</h5>
+            <p>Marsaariitii Dhaabbatta Fayyaa idil Addunyaa (WHO ) fi dhaabbata ittissa dhibee daddarboo biyya Ameerikaa (CDC) irraa cuurame. Odeeffannoo dabalataaf hidhaa (link) armaan gadii ilaalaa.
+            </p>
+            <ol>
+                <li>
+                    <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/">Gabaasa guutuu WHO 'f hidhaa kana
+                            hordofaa</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">Gabaasa
+                            guutuu WHO 'f hidhaa kana hordofaa</a>
+                    </p>
+                </li>
+            </ol>
+            <p style="text-align: center;">
+                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.Agartuu.com%2Ffayyaa&width=148&layout=button_count&action=like&size=large&share=true&height=46&appId=3268523619843425" width="148" height="46" style="border:none;overflow:hidden"
+                    scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </p>
+            <!-- Use comment form here -->
+            <div class="row">
+                <div class="col-md-12">
+                    <form [formGroup]="commentFormGroup" (ngSubmit)="submit()">
+                        <app-reusable-comment formControlName="commentForm"></app-reusable-comment>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button [disabled]="!commentFormGroup.valid" class="btn btn-primary col-md-12" (click)="submit()" type="submit"> Ergi</button> &nbsp;
+                </div>
+                <div class="col-md-6">
+                    <button (click)="resetForm()" class="btn btn-danger col-md-12" type="submit">Haqi </button>
+                </div>
+            </div>
+
+            &nbsp;
+            <div class="row" *ngFor="let comment of userComments">
+                <div class="col-md-2"></div>
+                <div *ngIf="userComments" class="col-xs-12 col-md-12">
+                    <div class="Paper-module--root--rGldT" style="background-color: rgb(255, 255, 255); padding: 28px 28px; display: block;">
+                        <div class="Comment-module--avatar--tDixR" style="display: block;"><img src="../../assets/userIcon.png" style="max-width: 50px ; max-height: 50px;" class="Comment-module--image--zfu07 img-responsive">
+                            <span id="commentMarginLeft">{{ comment.name }}</span>
+                        </div>
+                        <div class="Comment-module--content--3Ml7n" style="display: block;">
+                            <div>{{ comment.comment}}
+                            </div>
+                        </div>
+                        <small id="commentMarginLeft" class="font-weight-light">{{ comment.createdDate| date:'medium'}}</small>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <li class="story-body__list-item"> <a class="story-body__link" routerLink="/fayyaa/odeefannoo-dabalataa-corona" routerLinkActive="active">
+                    Namni dhibee Kanaan qabame hundi ni du’aa? </a></li>
+
+            <a routerLink="/fayyaa/odeefannoo-dabalataa-corona"> <img class="img-responsive" src="../../assets/fayyaa/corona-hundatu.jpg" alt="Suura Corona vaayirasii" style="width: 350px;max-height: 200px; max-width: 100%;"> </a>
+
+            <li class="story-body__list-item"> <a class="story-body__link" routerLink="/fayyaa/odeefannoo-dabalataa-corona" routerLinkActive="active">
+                    Qullubbiin adii Kooronaaf qorichaa?</a></li>
+        </div>

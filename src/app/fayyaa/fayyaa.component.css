@@ -1,0 +1,122 @@
+.container-fluid{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+h5
+{
+  text-align: center;
+  color: red;
+}
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#share-button{
+align-content: center;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 60;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+table.GeneratedTable {
+  width:100%;
+  background-color:#FFFFFF;
+  border-collapse:collapse;border-width:1px;
+  border-style:solid;
+  }
+  
+  table.GeneratedTable td, table.GeneratedTable th {
+  border-width:1px;
+  border-style:solid;
+  padding:3px;
+  }
+  
+  table.GeneratedTable thead {
+  background-color:red;
+  color: white;
+  }
+     /* To display the comment  */
+  .Paper-module--root--rGldT {
+        box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    }
+    .Comment-module--avatar--tDixR {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: grid;
+      grid-template-columns: 50px 1fr 1fr;
+      align-items: center;
+      grid-gap: 16px;
+      font-weight: 500;
+      white-space: nowrap;
+      font-size: 20px;
+  }
+  .Comment-module--image--zfu07 {
+    border-radius: 50%;
+  }
+  .BlogPost-module--content--3d0SS img {
+    box-shadow: none!important;
+  }
+  .BlogPost-module--grid--2eCkx {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    word-spacing: 1px;
+    text-rendering: optimizeLegibility;
+  }
+
+  .Comment-module--content--3Ml7n {
+    padding-left: 24px;
+  }
+  
+  #commentMarginLeft{
+    margin-left: 20px
+  }
+
+.story-body__unordered-list, .story-body__list-item {
+  margin-top: 16px;
+}
+
+.story-body__link, .story-body__link-external {
+border-bottom: 1px solid #dcdcdc;
+color: #222;
+font-weight: bold;
+}
+a:link {
+-webkit-tap-highlight-color: rgba(17,103,168,0.3);
+}
+a:hover{
+text-decoration: none;
+}
