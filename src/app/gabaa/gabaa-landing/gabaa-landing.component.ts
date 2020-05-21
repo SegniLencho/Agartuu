@@ -13,10 +13,10 @@ export class GabaaLandingComponent implements OnInit {
   ngOnInit() {
     this.metaTag.addTags([
       { property: "og:site_name", content: "Agartuu" },
-      { property: "og:title", content: "Gabaa Oromoo -Agartuu" },
-      { property: "og:image", content: "https://www.Agartuu.com/assets/gabaa/Uffata-Aadaa/gabaa-Meta-image.png" },
+      { property: "og:title", content: "Agartuu - Gabaa Oromoo " },
+      { property: "og:image", content: "https://www.agartuu.com/assets/gabaa/Uffata-Aadaa/gabaa-Meta-image.png" },
       { property: "og:description", content: "Gabaa Meesha Oromoo hunda itti argattan Kitaaba , Uffata Aadaa fi MeeshaaLe Aadaa Oromoo " },
-      { property: "og:url", content: "https://www.Agartuu.com/gabaa" }
+      { property: "og:url", content: "https://www.agartuu.com/gabaa" }
     ]);
   }
   ngOnDestroy() {

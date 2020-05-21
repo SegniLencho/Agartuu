@@ -25,10 +25,10 @@ export class HomeComponent implements OnInit {
     this.metaTag.addTags([
       { property: "og:type", content: "Agartuu" },
      { property: "og:site_name", content: "Agartuu" },
-     { property: "og:title", content: "Wiirtuu Agartuu - Agartuu"},
-     { property: "og:image", content: "https://www.Agartuu.com/assets/MyLogo.png"},
+     { property: "og:title", content: "Wiirtuu Agartuu"},
+     { property: "og:image", content: "https://www.agartuu.com/assets/MyLogo.png"},
      { property: "og:description", content: "Agartuu marsariitii (Website) odeeffannoo wayitawaa teekinoloojii waliin walqabate garaagaraa wallitti funanu fi qindeessuun afaan oromootti hiikuun ummata oromoof dhiheessuudha."},
-     { property: "og:url", content: "https://www.Agartuu.com/wiirtuu"}
+     { property: "og:url", content: "https://www.agartuu.com/wiirtuu"}
    ]);
   }
   ngOnDestroy() {

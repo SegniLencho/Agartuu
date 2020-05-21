@@ -34,9 +34,9 @@ export class GaaffiifDeebiiCoronaComponent implements OnInit {
     this.metaTag.addTags([
       { property: "og:site_name", content: "Agartuu" },
       { property: "og:title", content: "Namni Vaayirasii Kooronaan qabame hundi ni du'aa?" },
-      { property: "og:image", content: "https://www.Agartuu.com/assets/fayyaa/corona-hundatu.jpg" },
+      { property: "og:image", content: "https://www.agartuu.com/assets/fayyaa/corona-hundatu.jpg" },
       { property: "og:description", content: "Deebi'ii gaaffiiwwan vaayirasii kooroonaa waliin walqabatanii ka'aniif" },
-      { property: "og:url", content: "https://www.Agartuu.com/fayyaa/odeefannoo-dabalataa-corona" }
+      { property: "og:url", content: "https://www.agartuu.com/fayyaa/odeefannoo-dabalataa-corona" }
     ]);
   }
 

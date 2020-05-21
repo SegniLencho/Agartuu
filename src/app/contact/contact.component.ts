@@ -32,10 +32,10 @@ export class ContactComponent implements OnInit {
     this.metaTag.addTags([
       { property: "og:type", content: "Agartuu" },
      { property: "og:site_name", content: "Agartuu" },
-     { property: "og:title", content: "Aartii - Agartuu"},
-     { property: "og:image", content: "https://www.Agartuu.com/assets/MyLogo.png"},
+     { property: "og:title", content: "Agartuu - Aartii "},
+     { property: "og:image", content: "https://www.agartuu.com/assets/MyLogo.png"},
      { property: "og:description", content: "Agartuu quunnama "},
-     { property: "og:url", content: "https://www.Agartuu.com/nuquunnamaa"}
+     { property: "og:url", content: "https://www.agartuu.com/nuquunnamaa"}
    ]);
   
 

@@ -65,9 +65,9 @@ export class FayyaaComponent implements OnInit {
     this.metaTag.addTags([
       { property: "og:site_name", content: "Agartuu" },
       { property: "og:title", content: "Corona irraa akkamiin of eegna? " },
-      { property: "og:image", content: "https://www.Agartuu.com/assets/fayyaa/corona-cover.jpg" },
-      { property: "og:description", content: "Fayyaa " },
-      { property: "og:url", content: "https://www.Agartuu.com/fayyaa" }
+      { property: "og:image", content: "https://www.agartuu.com/assets/fayyaa/corona-cover.jpg" },
+      { property: "og:description", content: "Agartuu - Fayyaa " },
+      { property: "og:url", content: "https://www.agartuu.com/fayyaa" }
     ]);
   }
   collectCustomerComment() {

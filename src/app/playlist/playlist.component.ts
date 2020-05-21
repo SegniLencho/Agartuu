@@ -35,10 +35,10 @@ export class PlaylistComponent implements OnInit {
 
     this.metaTag.addTags([
       { property: "og:site_name", content: "Agartuu" },
-      { property: "og:title", content: "Oduu Teekinooloojii - Agartuu" },
-      { property: "og:image", content: "https://www.Agartuu.com/assets/oduutech-meta.jpg" },
+      { property: "og:title", content: "Agartuu - Oduu Teekinooloojii " },
+      { property: "og:image", content: "https://www.agartuu.com/assets/oduutech-meta.jpg" },
       { property: "og:description", content: "Oduu Teekinoolojii Afaan Oromoon qindeeffame" },
-      { property: "og:url", content: "https://www.Agartuu.com/oduutech" }
+      { property: "og:url", content: "https://www.agartuu.com/oduutech" }
     ]);
   }
   getEmbedUrl(ids: string) {
