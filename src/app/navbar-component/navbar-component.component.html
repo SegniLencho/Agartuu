@@ -1,8 +1,8 @@
 <nav #navbar class="navbar navbar-expand-md navbar-dark fixed-top" id="header-color">
     <button style="color: white;" class="navbar-toggler" type="button" (click)="collapsed = !collapsed" data-toggle="collapse">
-    <span class="navbar-toggler-icon"></span>
-   Agartuu
-  </button>
+        <span class="navbar-toggler-icon"></span>
+        Agartuu
+    </button>
 
     <a class="navbar-brand" routerLink="/wiirtuu"><img src="../../assets/MyLogo.png" style="max-height: 48px; max-width: 64px">
     </a>
@@ -31,21 +31,27 @@
             </li>
 
         </ul>
-        <div>
+        <div style="display: block;">
             <ul class="social-network social-circle">
                 <li><a href="https://www.facebook.com/africateck/" class="icoFacebook" title="Facebook"><i
-              class="fa fa-facebook"></i></a></li>
+                            class="fa fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/sanyiileenco/" class="icoInstagram" title="youtube"><i
-                class="fa fa-instagram"></i></a></li>
+                            class="fa fa-instagram"></i></a></li>
                 <li><a href="https://twitter.com/sanyiiLeencoo/" class="icoTwitter" title="Twitter"><i
-              class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCEYgUk8YSAlMxXlHfehuimA" class="icoYoutube" title="youtube"><i
-              class="fa fa-youtube-play"></i></a></li>
+                            class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCEYgUk8YSAlMxXlHfehuimA" class="icoYoutube" title="youtube"><i class="fa fa-youtube-play"></i></a></li>
+
+                <li style="list-style-type: none;" *ngIf="showShoppingCart"><a routerLink="checkout" class="icoYoutube" title="shoppingCart"><i
+                    class="fa fa-shopping-cart"> <span class='badge badge-warning' id='lblCartCount'> {{itemQuantity}}</span></i></a></li>
 
                 <!-- <li *ngIf="showContent">
                     <a routerLink="/admino"><i style="font-size: 20px ;" class="fa fa-user-circle-o"></i></a>
                 </li> -->
             </ul>
+
+
+
+
         </div>
     </div>
 </nav>

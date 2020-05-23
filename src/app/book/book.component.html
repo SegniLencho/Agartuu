@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let book1 of books">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{book1.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{book1.title}}
+                        </h5>
+                        <p class="card-text">{{book1.description}}
+                        </p>
+                        <button (click)="addToCart(book1)" class="btn btn-primary">${{book1.price}} | Bitadhu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <p *ngIf="showCheckoutButton">
+        <br/>
+        <button (click)="checkoutClicked()" class="btn btn-danger">Checkout</button> 
+    </p>-->
+</div>

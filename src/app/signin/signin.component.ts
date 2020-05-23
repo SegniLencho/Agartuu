@@ -22,7 +22,7 @@ export class SigninComponent implements OnInit {
 
     if (this.authService.getUserDetails(email, password)) {
       this.authService.setLoggedIn(true);
-      this.route.navigate(['/admino'])
+      this.route.navigate(['/shipping'])
 
     }
     else {

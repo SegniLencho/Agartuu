@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
      { property: "og:site_name", content: "Agartuu" },
      { property: "og:title", content: "Wiirtuu Agartuu"},
      { property: "og:image", content: "https://www.agartuu.com/assets/MyLogo.png"},
-     { property: "og:description", content: "Agartuu marsariitii (Website) odeeffannoo wayitawaa teekinoloojii waliin walqabate garaagaraa wallitti funanu fi qindeessuun afaan oromootti hiikuun ummata oromoof dhiheessuudha."},
+     { property: "og:description", content: "Agartuun marsariitii (Website) odeeffannoo wayitawaa teekinoloojii waliin walqabate garaagaraa wallitti funanuu fi qindeessuun ijaafi gurra uummata oromoo biraan gaha."},
      { property: "og:url", content: "https://www.agartuu.com/wiirtuu"}
    ]);
   }

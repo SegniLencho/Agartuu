@@ -1,0 +1,47 @@
+<div class="container">
+    <div *ngIf="cartIsEmpty; else notEmpty">
+        <p><i style="font-size: 80px;" class="fa fa-shopping-cart"></i></p>
+        <h3>Cart is Empty! Please go to shopping &nbsp; &nbsp; <a routerLink="/book"><i style="font-size: 40px;"
+            class="fa fa-arrow-circle-left"></i></a></h3>
+    </div>
+
+    <ng-template #notEmpty>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{book.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{book.title}}
+                        </h5>
+                        <p class="card-text">{{book.description}}
+                        </p>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Quantity</label>
+                            <select [(ngModel)]='defaultQuantity' class="form-control" id="exampleFormControlSelect1" (change)="valueChanged($event.target.value)">
+                                <option [selected]="true" value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <p> {{book.title}} ({{itemQuantity}}) on cart
+                </p>
+                <h4>Total Cost = ${{totalCost}}</h4>
+                <button (click)="checkout()" class="btn btn-danger"> Proceed Checkout </button>
+
+            </div>
+
+        </div>
+    </ng-template>
+
+    <!-- <div ng-template> Your cart is empty</div> -->
+
+
+
+</div>

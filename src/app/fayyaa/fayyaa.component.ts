@@ -14,8 +14,8 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./fayyaa.component.css']
 })
 export class FayyaaComponent implements OnInit {
-  createCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/Agartuu/fayyaa/createFayyaaComment';
-  getCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/Agartuu/fayyaa/getFayyaaCustomerComment';
+  createCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/fayyaa/createFayyaaComment';
+  getCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/fayyaa/getFayyaaCustomerComment';
   // Local Test
   // createCommentUrl = 'http://localhost:8081/Agartuu/fayyaa/createFayyaaComment';
   // getCommentUrl = 'http://localhost:8081/Agartuu/fayyaa/getFayyaaCustomerComment';

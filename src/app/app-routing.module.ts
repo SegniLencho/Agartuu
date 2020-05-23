@@ -27,6 +27,9 @@ import { DubartiiUlfaaComponent } from './fayyaa/dubartii-ulfaa/dubartii-ulfaa.c
 import { GaaffiifDeebiiCoronaComponent } from './fayyaa/gaaffiif-deebii-corona/gaaffiif-deebii-corona.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
+import { BookComponent } from './book/book.component';
+import { CheckoutComponent } from './gabaa/checkout/checkout.component';
+import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-address.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/wiirtuu', pathMatch: 'full' },
@@ -57,6 +60,11 @@ const routes: Routes = [
   { path: 'galmaayi', component: SignupComponent },
   { path: 'seeni', component: SigninComponent },
   { path: 'nuquunnamaa', component: ContactComponent },
+  { path: 'book', component: BookComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'shipping', component: ShippingAddressComponent },
+
+
 
   { path: '**', component: ErrorPageComponent }
 

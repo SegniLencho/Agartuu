@@ -22,7 +22,7 @@ export class AuthService {
   }
   getUserDetails(username, password) {
     if (username == 'admin' && password == 'segnibest') {
-      this.router.navigate(['/admino']);
+   
       return this.loggedInStatus = true;
     }
     else {

@@ -10,6 +10,7 @@ export class UffataAadaaComponent implements OnInit {
   constructor(private alert: AlertServicesService) { }
 
   ngOnInit() {
+    //Display all images from book object
   }
   onBuy(){
     this.alert.showError('Dogoggora','Dhiifama Ammaaf Bituu hin dandeessani');

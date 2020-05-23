@@ -52,6 +52,9 @@ import { environment } from 'src/environments/environment';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { AdminComponent } from './admin/admin.component';
+import { BookComponent } from './book/book.component';
+import { CheckoutComponent } from './gabaa/checkout/checkout.component';
+import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-address.component';
 
 @NgModule({
   declarations: [
@@ -100,9 +103,13 @@ import { AdminComponent } from './admin/admin.component';
     SignupComponent,
     SigninComponent,
     AdminComponent,
+    BookComponent,
+    CheckoutComponent,
+    ShippingAddressComponent,
     
 ],
   imports: [
+    
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
