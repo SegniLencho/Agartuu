@@ -1,17 +1,15 @@
 <div class="container">
     <div *ngIf="thanksForShopping; else stillShopping">
         <h2> Thanks For Shopping With Us!</h2>
+        <h3>Please Check your email to track status of your order</h3>
         <h3> Redirecting to Home Page &nbsp; &nbsp; <a routerLink="/book"><i style="font-size: 40px;"
                     class="fa fa-arrow-circle-left"></i></a></h3>
-        <mat-progress-bar mode="determinate"></mat-progress-bar>
     </div>
 
     <ng-template #stillShopping>
         <div class="py-5 text-center">
             <h2>Checkout form</h2>
         </div>
-
-
         <div class="row" *ngIf="!disableCheckoutBtn">
             <div class="col-md-4 order-md-2 mb-4">
                 <h5 class="d-flex justify-content-between align-items-center mb-3">
@@ -22,7 +20,6 @@
                     <li class="list-group-item d-flex justify-content-between lh-condensed">
                         <div>
                             <h6 class="my-0">{{book.title}}
-
                             </h6>
                             <small class="text-muted">Quantity {{itemQuantity}}</small>
                         </div>
@@ -109,10 +106,13 @@
                 </div> -->
                     <div formGroupName="address">
                         <h5 class="mb-3">Billing address</h5>
-
                         <div class="mb-3">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" formControlName="street" placeholder=" 1234 Main St " required>
+                            <label for="address">Street Address</label>
+                            <input type="text" class="form-control" formControlName="street" [ngClass]="{ 'is-invalid': myForm.address.controls.street.touched && myForm.address.controls.street.errors }">
+                            <div *ngIf="myForm.address.controls.street.touched && myForm.address.controls.street.errors" class="invalid-feedback">
+                                <div *ngIf="myForm.address.controls.street.errors.required">Street Address is Required
+                                </div>
+                            </div>
                         </div>
 
                         <div class="mb-3 ">
@@ -133,7 +133,7 @@
                             </div> -->
                             <div class="col-md-4 mb-3 ">
                                 <label for="state ">State</label>
-                                <select class="custom-select d-block w-100 " id="state " formControlName="state" required>
+                                <select class="custom-select d-block w-100 " id="state " formControlName="state" required [ngClass]="{ 'is-invalid': myForm.address.controls.state.touched && myForm.address.controls.state.errors }">
                                     <option value="" selected="selected">Select a State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -188,28 +188,29 @@
                                     <option value="WY">Wyoming</option>
 
                                 </select>
-                                <div class="invalid-feedback ">
-                                    Please provide a valid state.
+                                <div *ngIf="myForm.address.controls.state.touched && myForm.address.controls.state.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.address.controls.state.errors.required">Please Select state</div>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3 ">
                                 <label for="city ">City</label>
-                                <input type="text " class="form-control " formControlName="city" placeholder="City " required>
+                                <input type="text " class="form-control " formControlName="city" placeholder="City " required [ngClass]="{ 'is-invalid': myForm.address.controls.city.touched && myForm.address.controls.city.errors }">
 
-                                <div class="invalid-feedback ">
-                                    Please provide a valid state.
+                                <div *ngIf="myForm.address.controls.city.touched && myForm.address.controls.city.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.address.controls.city.errors.required"> Please provide a valid City.
+                                    </div>
                                 </div>
+
                             </div>
                             <div class="col-md-3 mb-3 ">
                                 <label for="zip ">Zip</label>
-                                <input type="text " class="form-control " formControlName="zip" id="zip " placeholder=" " required>
-                                <div class="invalid-feedback ">
-                                    Zip code required.
+                                <input type="text " class="form-control " formControlName="zip" id="zip " placeholder=" " required [ngClass]="{ 'is-invalid': myForm.address.controls.zip.touched && myForm.address.controls.zip.errors }">
+                                <div *ngIf="myForm.address.controls.zip.touched && myForm.address.controls.zip.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.address.controls.zip.errors.required"> Zip code required.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
 
@@ -229,57 +230,102 @@
 
                     <div formGroupName="payment">
                         <h5 class="mb-3 ">Payment</h5>
+                        <div class="row custom-wrapper">
+                            <div class="d-block my-4 ">
+                                <div class="custom-control custom-radio">
+                                    <input id="credit_card" type="radio" class="custom-control-input" value="credit_card" name="paymentType" formControlName="paymentType">
+                                    <label class="custom-control-label" for="credit_card">Credit card</label>
+                                </div>
 
+                                <div class="custom-control custom-radio">
+                                    <input id="debit_card" type="radio" class="custom-control-input" value="debit_card" name="paymentType" formControlName="paymentType">
+                                    <label class="custom-control-label" for="debit_card">Debit card</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="paypal" type="radio" class="custom-control-input" value="paypal" name="paymentType" formControlName="paymentType">
+                                    <label class="custom-control-label" for="paypal">Paypal</label>
+                                </div>
 
-                        <!-- <div class="d-block my-3 ">
-                            <div class="custom-control custom-radio ">
-                                <input name="paymentMethod " type="radio " class="custom-control-input " checked required>
-                                <label class="custom-control-label " for="credit ">Credit card</label>
-                            </div>
-                            <div class="custom-control custom-radio ">
-                                <input id="debit " name="paymentMethod " type="radio " class="custom-control-input " required>
-                                <label class="custom-control-label " for="debit ">Debit card</label>
-                            </div>
-                            <div class="custom-control custom-radio ">
-                                <input id="paypal " name="paymentMethod " type="radio " class="custom-control-input " required>
-                                <label class="custom-control-label " for="paypal ">Paypal</label>
-                            </div>
-                        </div> -->
-                        <div class="row ">
-                            <div class="col-md-6 mb-3 ">
-                                <label for="cc-name ">Name on card</label>
-                                <input type="text " class="form-control " formControlName="nameOnCard" required>
-
-                            </div>
-                            <div class="col-md-6 mb-3 ">
-                                <label for="cc-number ">Credit card number</label>
-                                <input type="text " class="form-control " placeholder=" " formControlName="cardNumber" required>
 
                             </div>
                         </div>
                         <div class="row ">
-                            <div class="col-md-3 mb-3 ">
-                                <label for="cc-expiration ">Expiration</label>
-                                <input type="text " class="form-control " formControlName="exp" required>
-                                <div class="invalid-feedback ">
-                                    Expiration date required
+                            <div class="col-md-6 mb-3 ">
+                                <label for="cc-name ">Name on card</label>
+                                <input type="text " class="form-control " formControlName="nameOnCard" required [ngClass]="{ 'is-invalid': myForm.payment.controls.nameOnCard.touched && myForm.payment.controls.nameOnCard.errors }">
+                                <div *ngIf="myForm.payment.controls.nameOnCard.touched && myForm.payment.controls.nameOnCard.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.payment.controls.nameOnCard.errors.required"> Please Enter Name as displayed On Card!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="cc-number ">Credit card number</label>
+                                <input type="text " class="form-control " placeholder=" " formControlName="cardNumber" required [ngClass]="{ 'is-invalid': myForm.payment.controls.cardNumber.touched && myForm.payment.controls.cardNumber.errors }">
+                                <div *ngIf="myForm.payment.controls.cardNumber.touched && myForm.payment.controls.cardNumber.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.payment.controls.cardNumber.errors.required"> Please Enter Name as displayed On Card!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-2 mb-2 ">
+                                <label for="cc-expiration "> Expiration</label>
+                            </div>
+                            <div class="col-md-2 mb-2 ">
+                                <select class="custom-select d-block w-100 " id="expMonth " formControlName="expMonth" required [ngClass]="{ 'is-invalid': myForm.payment.controls.expMonth.touched && myForm.payment.controls.expMonth.errors }">
+                                    <option value="">Month</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <div *ngIf="myForm.payment.controls.expMonth.touched && myForm.payment.controls.expMonth.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.payment.controls.expMonth.errors.required"> Expiration Month required
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2 ">
+                                <select class="custom-select d-block w-100 " id="expYear " formControlName="expYear" required [ngClass]="{ 'is-invalid': myForm.payment.controls.expYear.touched && myForm.payment.controls.expYear.errors }">
+                                    <option value="">Year</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                                <div *ngIf="myForm.payment.controls.expYear.touched && myForm.payment.controls.expYear.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.payment.controls.expYear.errors.required"> Expiration Year is required
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3 ">
                                 <label for="cc-expiration ">CVV</label>
-                                <input type="text " class="form-control " id="cc-cvv " formControlName="cvv" placeholder=" " required>
-                                <div class="invalid-feedback ">
-                                    Security code required
+                                <input type="text " class="form-control " id="cc-cvv " formControlName="cvv" maxlength="3" required [ngClass]="{ 'is-invalid': myForm.payment.controls.cvv.touched && myForm.payment.controls.cvv.errors }">
+                                <div *ngIf="myForm.payment.controls.cvv.touched && myForm.payment.controls.cvv.errors" class="invalid-feedback">
+                                    <div *ngIf="myForm.payment.controls.cvv.errors.required"> Security code required
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr class="mb-4 ">
-                    <button [disabled]="!billingForm.valid " class="btn btn-primary col-md-12 " type="submit ">Continue
-                        to Checkout</button>
-
+                    <button class="btn btn-primary col-md-12 " type="submit ">Place Your Order</button>
+                    <!-- [disabled]="!billingForm.valid " -->
                 </form>
-
             </div>
         </div>
     </ng-template>
