@@ -52,7 +52,7 @@ import { environment } from 'src/environments/environment';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { AdminComponent } from './admin/admin.component';
-import { BookComponent } from './book/book.component';
+import { BookComponent } from './gabaa/book/book.component';
 import { CheckoutComponent } from './gabaa/checkout/checkout.component';
 import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-address.component';
 

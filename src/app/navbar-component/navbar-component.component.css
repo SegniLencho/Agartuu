@@ -73,7 +73,11 @@ a.socialIcon:hover,
     color: #fff;
 }
 
-.social-circle li a:hover i,
+
+/* Rotate Social icon on Navbar */
+
+
+/* .social-circle li a:hover i,
 .triggeredHover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -84,7 +88,7 @@ a.socialIcon:hover,
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
     transition: all 0.2s;
-}
+} */
 
 .social-circle i {
     -webkit-transition: all 0.8s;

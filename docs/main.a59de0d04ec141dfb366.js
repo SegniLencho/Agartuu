@@ -1314,7 +1314,7 @@
                 Ar = Er("colgroup,dd,dt,li,p,tbody,td,tfoot,th,thead,tr"),
                 Tr = Er("rp,rt"),
                 Ir = Sr(Tr, Ar),
-                Mr = Sr(Pr, Sr(Ar, Er("address,article,aside,blockquote,caption,center,del,details,dialog,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5,h6,header,hgroup,hr,ins,main,map,menu,nav,ol,pre,section,summary,table,ul")), Sr(Tr, Er("a,abbr,acronym,audio,b,bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,picture,q,ruby,rp,rt,s,samp,small,source,span,strike,strong,sub,sup,time,track,tt,u,var,video")), Ir),
+                Mr = Sr(Pr, Sr(Ar, Er("address,article,aside,blockquote,caption,center,del,details,dialog,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h4,h6,header,hgroup,hr,ins,main,map,menu,nav,ol,pre,section,summary,table,ul")), Sr(Tr, Er("a,abbr,acronym,audio,b,bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,picture,q,ruby,rp,rt,s,samp,small,source,span,strike,strong,sub,sup,time,track,tt,u,var,video")), Ir),
                 Nr = Er("background,cite,href,itemtype,longdesc,poster,src,xlink:href"),
                 Rr = Er("srcset"),
                 jr = Sr(Nr, Rr, Er("abbr,accesskey,align,alt,autoplay,axis,bgcolor,border,cellpadding,cellspacing,class,clear,color,cols,colspan,compact,controls,coords,datetime,default,dir,download,face,headers,height,hidden,hreflang,hspace,ismap,itemscope,itemprop,kind,label,lang,language,loop,media,muted,nohref,nowrap,open,preload,rel,rev,role,rows,rowspan,rules,scope,scrolling,shape,size,sizes,span,srclang,start,summary,tabindex,target,title,translate,type,usemap,valign,value,vspace,width")),
@@ -5394,7 +5394,7 @@
                 Ud = uo({
                     encapsulation: 0,
                     styles: [
-                        [".container[_ngcontent-%COMP%]{padding-bottom:30px;padding-top:30px}.content[_ngcontent-%COMP%]{padding-top:60px;padding-bottom:60px}*[_ngcontent-%COMP%]{box-sizing:border-box}h1[_ngcontent-%COMP%], h2[_ngcontent-%COMP%], h3[_ngcontent-%COMP%], h4[_ngcontent-%COMP%], h5[_ngcontent-%COMP%], h6[_ngcontent-%COMP%]{margin:0;padding:0;color:#18150d;font-weight:400;font-family:Montserrat,sans-serif;text-transform:uppercase;text-rendering:optimizeLegibility}p[_ngcontent-%COMP%]{margin:0 0 10px}.widget[_ngcontent-%COMP%]{margin-bottom:10px;background-color:#f4f1ec;padding:30px;border-radius:10px}.widget-title[_ngcontent-%COMP%]{margin-bottom:20px}h3[_ngcontent-%COMP%]{font-size:18px;line-height:28px}address[_ngcontent-%COMP%]{margin-bottom:20px;font-style:normal;line-height:1.42857143;display:block}.form-control[_ngcontent-%COMP%]{transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}.col-md-12[_ngcontent-%COMP%]{flex:0 0 100%;max-width:100%}"]
+                        [".container[_ngcontent-%COMP%]{padding-bottom:30px;padding-top:30px}.content[_ngcontent-%COMP%]{padding-top:60px;padding-bottom:60px}*[_ngcontent-%COMP%]{box-sizing:border-box}h1[_ngcontent-%COMP%], h2[_ngcontent-%COMP%], h3[_ngcontent-%COMP%], h4[_ngcontent-%COMP%], h4[_ngcontent-%COMP%], h6[_ngcontent-%COMP%]{margin:0;padding:0;color:#18150d;font-weight:400;font-family:Montserrat,sans-serif;text-transform:uppercase;text-rendering:optimizeLegibility}p[_ngcontent-%COMP%]{margin:0 0 10px}.widget[_ngcontent-%COMP%]{margin-bottom:10px;background-color:#f4f1ec;padding:30px;border-radius:10px}.widget-title[_ngcontent-%COMP%]{margin-bottom:20px}h3[_ngcontent-%COMP%]{font-size:18px;line-height:28px}address[_ngcontent-%COMP%]{margin-bottom:20px;font-style:normal;line-height:1.42857143;display:block}.form-control[_ngcontent-%COMP%]{transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}.col-md-12[_ngcontent-%COMP%]{flex:0 0 100%;max-width:100%}"]
                     ],
                     data: {}
                 });
@@ -5596,7 +5596,7 @@
                     ["style", "max-width: 100%"]
                 ], null, null, null, null, null)), (t()(), jo(12, 0, null, null, 4, "div", [
                     ["class", "carousel-caption d-none d-md-block"]
-                ], null, null, null, null, null)), (t()(), jo(13, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Adunyaa dorgomna"])), (t()(), jo(15, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Akka Adunyaatti Yaadna akka Oromiyaatti Dalagna"])), (t()(), jo(17, 0, null, null, 6, "div", [
+                ], null, null, null, null, null)), (t()(), jo(13, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Adunyaa dorgomna"])), (t()(), jo(15, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Akka Adunyaatti Yaadna akka Oromiyaatti Dalagna"])), (t()(), jo(17, 0, null, null, 6, "div", [
                     ["class", "carousel-item"]
                 ], null, null, null, null, null)), (t()(), jo(18, 0, null, null, 0, "img", [
                     ["alt", "Second slide"],
@@ -5605,7 +5605,7 @@
                     ["style", "max-width: 100%"]
                 ], null, null, null, null, null)), (t()(), jo(19, 0, null, null, 4, "div", [
                     ["class", "carousel-caption d-none d-md-block"]
-                ], null, null, null, null, null)), (t()(), jo(20, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Dhalootaaf dhamaana"])), (t()(), jo(22, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Dhaaloota boruuf Adunyaa bareedduu uumna"])), (t()(), jo(24, 0, null, null, 6, "div", [
+                ], null, null, null, null, null)), (t()(), jo(20, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Dhalootaaf dhamaana"])), (t()(), jo(22, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Dhaaloota boruuf Adunyaa bareedduu uumna"])), (t()(), jo(24, 0, null, null, 6, "div", [
                     ["class", "carousel-item"]
                 ], null, null, null, null, null)), (t()(), jo(25, 0, null, null, 0, "img", [
                     ["alt", "Third slide"],
@@ -5614,7 +5614,7 @@
                     ["style", "max-width: 100%"]
                 ], null, null, null, null, null)), (t()(), jo(26, 0, null, null, 4, "div", [
                     ["class", "carousel-caption d-none d-md-block"]
-                ], null, null, null, null, null)), (t()(), jo(27, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Aadaaf duudha"])), (t()(), jo(29, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Aadaaf duudha qabannee Adunyaa waliin deemna"])), (t()(), jo(31, 0, null, null, 6, "div", [
+                ], null, null, null, null, null)), (t()(), jo(27, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Aadaaf duudha"])), (t()(), jo(29, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Aadaaf duudha qabannee Adunyaa waliin deemna"])), (t()(), jo(31, 0, null, null, 6, "div", [
                     ["class", "carousel-item"]
                 ], null, null, null, null, null)), (t()(), jo(32, 0, null, null, 0, "img", [
                     ["alt", "Second slide"],
@@ -5623,7 +5623,7 @@
                     ["style", "max-width: 100%"]
                 ], null, null, null, null, null)), (t()(), jo(33, 0, null, null, 4, "div", [
                     ["class", "carousel-caption d-none d-md-block"]
-                ], null, null, null, null, null)), (t()(), jo(34, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Of Beekuu"])), (t()(), jo(36, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Of beekuu irraa jalqabne"])), (t()(), jo(38, 0, null, null, 3, "a", [
+                ], null, null, null, null, null)), (t()(), jo(34, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Of Beekuu"])), (t()(), jo(36, 0, null, null, 1, "p", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Of beekuu irraa jalqabne"])), (t()(), jo(38, 0, null, null, 3, "a", [
                     ["class", "carousel-control-prev"],
                     ["data-slide", "prev"],
                     ["href", "#carouselExampleIndicators"],
@@ -5770,7 +5770,7 @@
                 Kd = uo({
                     encapsulation: 0,
                     styles: [
-                        ["#mainContent[_ngcontent-%COMP%]{text-align:center}p[_ngcontent-%COMP%]{font-family:Arial,Helvetica,sans-serif}h5[_ngcontent-%COMP%]{color:red}.container[_ngcontent-%COMP%]{padding-bottom:30px;padding-top:30px}"]
+                        ["#mainContent[_ngcontent-%COMP%]{text-align:center}p[_ngcontent-%COMP%]{font-family:Arial,Helvetica,sans-serif}h4[_ngcontent-%COMP%]{color:red}.container[_ngcontent-%COMP%]{padding-bottom:30px;padding-top:30px}"]
                     ],
                     data: {}
                 });
@@ -5805,7 +5805,7 @@
                     ["src", "../../assets/service.jpg"]
                 ], null, null, null, null, null)), (t()(), jo(15, 0, null, null, 13, "div", [
                     ["class", "card-body"]
-                ], null, null, null, null, null)), (t()(), jo(16, 0, null, null, 1, "h5", [
+                ], null, null, null, null, null)), (t()(), jo(16, 0, null, null, 1, "h4", [
                     ["class", "card-title"]
                 ], null, null, null, null, null)), (t()(), Wi(17, null, [" ", " "])), (t()(), jo(18, 0, null, null, 10, "ul", [
                     ["class", "list-group list-group-flush"]
@@ -5830,7 +5830,7 @@
                     ["src", "../../assets/mission.jpg"]
                 ], null, null, null, null, null)), (t()(), jo(32, 0, null, null, 4, "div", [
                     ["class", "card-body"]
-                ], null, null, null, null, null)), (t()(), jo(33, 0, null, null, 1, "h5", [
+                ], null, null, null, null, null)), (t()(), jo(33, 0, null, null, 1, "h4", [
                     ["class", "card-title"]
                 ], null, null, null, null, null)), (t()(), Wi(34, null, [" ", " "])), (t()(), jo(35, 0, null, null, 1, "p", [
                     ["class", "card-text"]
@@ -5845,7 +5845,7 @@
                     ["src", "../../assets/vision.jpg"]
                 ], null, null, null, null, null)), (t()(), jo(40, 0, null, null, 15, "div", [
                     ["class", "card-body"]
-                ], null, null, null, null, null)), (t()(), jo(41, 0, null, null, 1, "h5", [
+                ], null, null, null, null, null)), (t()(), jo(41, 0, null, null, 1, "h4", [
                     ["class", "card-title"]
                 ], null, null, null, null, null)), (t()(), Wi(42, null, [" ", " "])), (t()(), jo(43, 0, null, null, 12, "ul", [
                     ["class", "list-group list-group-flush"]
@@ -6095,7 +6095,7 @@
                 hg = uo({
                     encapsulation: 0,
                     styles: [
-                        ["@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);section[_ngcontent-%COMP%]{padding:60px 0}section[_ngcontent-%COMP%]   .section-title[_ngcontent-%COMP%]{text-align:center;color:#007b5e;margin-bottom:50px;text-transform:uppercase}#footer[_ngcontent-%COMP%]{background:#000!important}#footer[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{padding-left:10px;border-left:3px solid #eee;padding-bottom:6px;margin-bottom:20px;color:#fff}#footer[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{color:#fff;text-decoration:none!important;background-color:transparent;-webkit-text-decoration-skip:objects}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:3px 0}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{margin-right:5px;font-size:25px;transition:.5s}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:30px;margin-top:-10px}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], #footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{color:#fff}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover{color:#eee}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:3px 0;transition:.5s}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover{padding:3px 0;margin-left:5px;font-weight:700}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{margin-right:5px}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-weight:700}@media (max-width:767px){#footer[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%]{padding-left:0;border-left:transparent;padding-bottom:0;margin-bottom:10px}}"]
+                        ["@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);section[_ngcontent-%COMP%]{padding:60px 0}section[_ngcontent-%COMP%]   .section-title[_ngcontent-%COMP%]{text-align:center;color:#007b5e;margin-bottom:50px;text-transform:uppercase}#footer[_ngcontent-%COMP%]{background:#000!important}#footer[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{padding-left:10px;border-left:3px solid #eee;padding-bottom:6px;margin-bottom:20px;color:#fff}#footer[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{color:#fff;text-decoration:none!important;background-color:transparent;-webkit-text-decoration-skip:objects}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:3px 0}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{margin-right:5px;font-size:25px;transition:.5s}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-size:30px;margin-top:-10px}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], #footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{color:#fff}#footer[_ngcontent-%COMP%]   ul.social[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover{color:#eee}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{padding:3px 0;transition:.5s}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover{padding:3px 0;margin-left:5px;font-weight:700}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{margin-right:5px}#footer[_ngcontent-%COMP%]   ul.quick-links[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:hover   a[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{font-weight:700}@media (max-width:767px){#footer[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{padding-left:0;border-left:transparent;padding-bottom:0;margin-bottom:10px}}"]
                     ],
                     data: {}
                 });
@@ -6113,7 +6113,7 @@
                     ["class", "row text-center text-xs-center text-sm-left text-md-left"]
                 ], null, null, null, null, null)), (t()(), jo(4, 0, null, null, 43, "div", [
                     ["class", "col-xs-12 col-sm-4 col-md-4"]
-                ], null, null, null, null, null)), (t()(), jo(5, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Hidhaa Gabaaboo"])), (t()(), jo(7, 0, null, null, 40, "ul", [
+                ], null, null, null, null, null)), (t()(), jo(5, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Hidhaa Gabaaboo"])), (t()(), jo(7, 0, null, null, 40, "ul", [
                     ["class", "list-unstyled quick-links"]
                 ], null, null, null, null, null)), (t()(), jo(8, 0, null, null, 7, "li", [], null, null, null, null, null)), (t()(), jo(9, 0, null, null, 6, "a", [
                     ["routerLink", "/wiirtuu"],
@@ -6173,7 +6173,7 @@
                     ["class", "fa fa-angle-double-right"]
                 ], null, null, null, null, null)), (t()(), Wi(-1, null, ["Nu quunnamaa"])), (t()(), jo(48, 0, null, null, 43, "div", [
                     ["class", "col-xs-12 col-sm-4 col-md-4"]
-                ], null, null, null, null, null)), (t()(), jo(49, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Hidhaa Gabaaboo"])), (t()(), jo(51, 0, null, null, 40, "ul", [
+                ], null, null, null, null, null)), (t()(), jo(49, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Hidhaa Gabaaboo"])), (t()(), jo(51, 0, null, null, 40, "ul", [
                     ["class", "list-unstyled quick-links"]
                 ], null, null, null, null, null)), (t()(), jo(52, 0, null, null, 7, "li", [], null, null, null, null, null)), (t()(), jo(53, 0, null, null, 6, "a", [
                     ["routerLink", "/wiirtuu"],
@@ -6233,7 +6233,7 @@
                     ["class", "fa fa-angle-double-right"]
                 ], null, null, null, null, null)), (t()(), Wi(-1, null, ["Nu quunnamaa"])), (t()(), jo(92, 0, null, null, 40, "div", [
                     ["class", "col-xs-12 col-sm-4 col-md-4"]
-                ], null, null, null, null, null)), (t()(), jo(93, 0, null, null, 1, "h5", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Hidhaa Gabaaboo"])), (t()(), jo(95, 0, null, null, 37, "ul", [
+                ], null, null, null, null, null)), (t()(), jo(93, 0, null, null, 1, "h4", [], null, null, null, null, null)), (t()(), Wi(-1, null, ["Hidhaa Gabaaboo"])), (t()(), jo(95, 0, null, null, 37, "ul", [
                     ["class", "list-unstyled quick-links"]
                 ], null, null, null, null, null)), (t()(), jo(96, 0, null, null, 7, "li", [], null, null, null, null, null)), (t()(), jo(97, 0, null, null, 6, "a", [
                     ["routerLink", "/wiirtuu"],

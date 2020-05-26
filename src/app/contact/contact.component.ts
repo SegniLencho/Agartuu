@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
      { property: "og:site_name", content: "Agartuu" },
      { property: "og:title", content: "Agartuu - Aartii "},
      { property: "og:image", content: "https://www.agartuu.com/assets/MyLogo.png"},
-     { property: "og:description", content: "Agartuu quunnama "},
+     { property: "og:description", content: "Agartuu quunnamaa "},
      { property: "og:url", content: "https://www.agartuu.com/nuquunnamaa"}
    ]);
   

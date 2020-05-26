@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, ElementRef, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { AuthService } from '../services/authservice/auth.service';
+import { CartService } from '../services/cart/cart.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar-component',
@@ -10,31 +12,49 @@ import { AuthService } from '../services/authservice/auth.service';
   templateUrl: './navbar-component.component.html',
   styleUrls: ['./navbar-component.component.css']
 })
-export class NavbarComponentComponent implements OnInit {
+export class NavbarComponentComponent implements OnInit, OnDestroy {
   collapsed = true;
   public text: String;
   showContent = false;
-  showShoppingCart = false;
-  itemQuantity ='1'
-  constructor(private eRef: ElementRef, private authService: AuthService) {
-    this.text = 'no clicks yet';
+  showShoppingCart:boolean = false;
+  itemQuantity:number
+  subscription: Subscription
+  quantitySubscription: Subscription
+  mymessage
+  constructor(private eRef: ElementRef, private authService: AuthService, private changDetector: ChangeDetectorRef, private cartService: CartService) {
+     this.subscription = this.cartService.getStatus().subscribe(status => this.showShoppingCart =!status)
+     this.quantitySubscription= this.cartService.getQuantityOfItemOnCart().subscribe(quantity =>  this.itemQuantity = quantity)
+     this.itemQuantity = this.cartService.getItemQuantityFromLocalStorage();
+
+
   }
+
+
+
   ngOnInit() {
-    this.itemQuantity= localStorage.getItem('itemQuantity');
+//Set initial Quantity of Items 1 by default
+
     // if(this.authService.isLoggedIn){
     //   this.showContent=true;
+
+
     // }
-    if (localStorage.getItem('itemOnCart') != null && localStorage.getItem('itemOnCart') != undefined && localStorage.getItem('itemOnCart') != '') {
+    if (!this.cartService.cartIsEmpty()) {
       this.showShoppingCart = true;
+      this.itemQuantity =this.cartService.getItemQuantityFromLocalStorage();
+
     }
   }
   @ViewChild('navbar') nav;
   onClick(event) {
-
     if (!this.nav.nativeElement.contains(event.target)) {
       this.collapsed = true;
     }
   }
 
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+    this.quantitySubscription.unsubscribe();
+  }
 
 }

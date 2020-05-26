@@ -13,9 +13,9 @@ import { AuthService } from 'src/app/services/authservice/auth.service';
 export class CheckoutComponent implements OnInit {
   public book: Book;
   public cartIsEmpty: boolean = true;
-  itemQuantity = '1'
+  itemQuantity = 1
   totalCost: any = localStorage.getItem('totalCost')
-  defaultQuantity = '1'
+  defaultQuantity = 1;
   constructor(private itemsForSale: ItemsForsaleService,
     private authService: AuthService, private cartService: CartService, private router: Router) { }
 
@@ -24,7 +24,7 @@ export class CheckoutComponent implements OnInit {
   }
 
   checkout() {
-    localStorage.setItem('itemQuantity', this.itemQuantity);
+    localStorage.setItem('itemQuantity', this.itemQuantity.toString());
     localStorage.setItem('totalCost', this.totalCost)
     if (this.authService.isLoggedIn) {
       //ask user to enter shipping address 
@@ -58,8 +58,8 @@ export class CheckoutComponent implements OnInit {
       }
       if (this.totalCost == undefined || this.totalCost == null)
         this.totalCost = this.book.price;
-      if (localStorage.getItem('itemQuantity') != null) {
-        this.defaultQuantity = localStorage.getItem('itemQuantity')
+      if (this.cartService.getItemQuantityFromLocalStorage() != 0) {
+        this.defaultQuantity = this.cartService.getItemQuantityFromLocalStorage();
         this.itemQuantity=this.defaultQuantity;
       }
 
@@ -72,6 +72,15 @@ export class CheckoutComponent implements OnInit {
     this.itemQuantity = value;
     localStorage.setItem('itemQuantity', value);
     localStorage.setItem('totalCost', this.totalCost)
-    location.reload();
+    this.cartService.setQuantityOfItemOnCart(value);
+    // location.reload();
+  }
+  removeItem(itemId){
+    localStorage.removeItem('itemQuantity')
+    localStorage.removeItem('totalCost')
+    localStorage.removeItem('itemOnCart')
+    //set cart is empty to true
+    this.cartService.updateCartStatus(true);
+    this.cartIsEmpty = true;
   }
 }

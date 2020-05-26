@@ -27,7 +27,7 @@ import { DubartiiUlfaaComponent } from './fayyaa/dubartii-ulfaa/dubartii-ulfaa.c
 import { GaaffiifDeebiiCoronaComponent } from './fayyaa/gaaffiif-deebii-corona/gaaffiif-deebii-corona.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
-import { BookComponent } from './book/book.component';
+import { BookComponent } from './gabaa/book/book.component';
 import { CheckoutComponent } from './gabaa/checkout/checkout.component';
 import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-address.component';
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Directive } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, Meta } from '@angular/platform-browser';
 
 import { Subject } from 'rxjs';

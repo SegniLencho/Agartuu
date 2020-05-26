@@ -30,13 +30,11 @@
             </div>
 
             <div class="col-md-8">
-                <p> {{book.title}} ({{itemQuantity}}) on cart
+                <p> {{book.title}} ({{itemQuantity}}) on cart <button (click)="removeItem(book.bookId)" type="button" class="btn btn-link">| remove Item</button>
                 </p>
-                <h4>Total Cost = ${{totalCost}}</h4>
+                <h2>Total Cost = <strong>${{totalCost}}</strong></h2>
                 <button (click)="checkout()" class="btn btn-danger"> Proceed Checkout </button>
-
             </div>
-
         </div>
     </ng-template>
 
