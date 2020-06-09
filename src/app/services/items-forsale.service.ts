@@ -17,7 +17,7 @@ export class ItemsForsaleService {
   getbooks() {
     return this.books;
   }
-  getBookById(id:number){
+  getBookById(id: number) {
     return this.books[id];
   }
 }

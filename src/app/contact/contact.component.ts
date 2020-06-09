@@ -11,8 +11,8 @@ import { Meta } from '@angular/platform-browser';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  createCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/createComment';
-  getCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/getCustomerComment';
+  createCommentUrl = 'http://localhost:8083/afroteck/fayyaa/createFayyaaComment';
+  getCommentUrl = 'http://localhost:8083/afroteck/fayyaa/getFayyaaCustomerComment';
 
   @ViewChild('myform', { static: true }) formValues;
 

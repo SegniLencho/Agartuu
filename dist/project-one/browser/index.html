@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN7C2LQepIW-YY1djzA-LSVNojcofx9kw&libraries=places"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <meta charset="utf-8">
+    <title>Agartuu</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.22d5669cf8194aa656a7.css"></head>
+
+<body>
+    <app-root></app-root>
+    <!-- Facebook charboat -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="110002483706007" theme_color="#13cf13" logged_in_greeting="Nageenyi badhaadha? Maaloo maal isin gargaarru?" logged_out_greeting="Nageenyi badhaadha? Maaloo maal isin gargaarru?">
+    </div>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W09SD73PL6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W09SD73PL6');
+    </script>
+
+<script src="runtime.689ba4fd6cadb82c1ac2.js" defer></script><script src="polyfills-es5.87f297bfc1ad5e3f9744.js" nomodule defer></script><script src="polyfills.d597c1b313100880d113.js" defer></script><script src="scripts.46ecff74ac216f3668d6.js" defer></script><script src="vendor.eb46814f67e9b741a768.js" defer></script><script src="main.f604ea9d9de696e18f0a.js" defer></script></body>
+<!-- firebase integration -->
+
+
+</html>

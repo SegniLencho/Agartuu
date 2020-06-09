@@ -17,9 +17,8 @@ export class GaaffiifDeebiiCoronaComponent implements OnInit {
   // LocalTest
   // createCommentUrl = 'http://localhost:8081/Agartuu/fayyaa/createFayyaaComment';
   // getCommentUrl = 'http://localhost:8081/Agartuu/fayyaa/getFayyaaCustomerComment';
-  createCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/fayyaa/createFayyaaComment';
-  getCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/fayyaa/getFayyaaCustomerComment';
-  
+  createCommentUrl = 'http://localhost:8083/afroteck/fayyaa/createFayyaaComment';
+  getCommentUrl = 'http://localhost:8083/afroteck/fayyaa/getFayyaaCustomerComment';
   commentFormGroup: FormGroup;
 
 

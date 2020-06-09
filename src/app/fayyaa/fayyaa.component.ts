@@ -14,8 +14,8 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./fayyaa.component.css']
 })
 export class FayyaaComponent implements OnInit {
-  createCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/fayyaa/createFayyaaComment';
-  getCommentUrl = 'https://segni-cloud-274217.uc.r.appspot.com/afroteck/fayyaa/getFayyaaCustomerComment';
+  createCommentUrl = 'http://localhost:8083/afroteck/fayyaa/createFayyaaComment';
+  getCommentUrl = 'http://localhost:8083/afroteck/fayyaa/getFayyaaCustomerComment';
   // Local Test
   // createCommentUrl = 'http://localhost:8081/Agartuu/fayyaa/createFayyaaComment';
   // getCommentUrl = 'http://localhost:8081/Agartuu/fayyaa/getFayyaaCustomerComment';
@@ -117,46 +117,7 @@ export class FayyaaComponent implements OnInit {
       subscribe(data => this.ukData = data)
 
   }
-  openNav() {
-    this.mainStyle = {
-      width: "100%",
-      height: "100%"
-
-    }
-    this.sideStyle = {
-      width: "100%",
-      height: "100%"
-
-    }
-
-
-  }
-  closeNav() {
-    this.mainStyle = {
-      width: "0px",
-      height: "0px"
-
-    }
-    this.sideStyle = {
-      width: "0px",
-      height: "0px"
-
-    }
-
-  }
-  onClick(event: EventEmitter<MouseEvent>) {
-
-    this.mainStyle = {
-      width: "0px",
-      height: "0px"
-
-    }
-    this.sideStyle = {
-      width: "0px",
-      height: "0px"
-
-    }
-  }
+ 
 
   ngOnDestroy() {
     this.metaTagService.removeMetaTags(this.metaTag);

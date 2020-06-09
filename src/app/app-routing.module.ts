@@ -30,6 +30,7 @@ import { SigninComponent } from './signin/signin.component';
 import { BookComponent } from './gabaa/book/book.component';
 import { CheckoutComponent } from './gabaa/checkout/checkout.component';
 import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-address.component';
+import { SiyaasaLandingComponent } from './siyaasa/siyaasa-landing/siyaasa-landing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/wiirtuu', pathMatch: 'full' },
@@ -43,7 +44,7 @@ const routes: Routes = [
   { path: 'wiirtuu', component: HomeComponent },
   { path: 'waayeekeenya', component: AboutComponent },
   { path: 'gabaa', component: GabaaLandingComponent },
-  { path: 'oduutech', component: PlaylistComponent },
+  { path: 'oduutech', component: IphoneWarqiirraaHojjetameComponent },
   { path: 'uffata-aadaa', component: UffataAadaaComponent },
   { path: 'fayyaa', component: FayyaaComponent },
   { path: 'meeshaa-aadaa', component: OtherItemsComponent },
@@ -52,11 +53,12 @@ const routes: Routes = [
   { path: 'asoosama', component: AsoosamaComponent },
   { path: 'walaloo', component: WalalooComponent },
   { path: 'kitaaba-ijoollee', component: IjoolleeComponent },
-  { path: 'siyaasa', component: SiyaasaComponent },
+  { path: 'kitaaba-siyaasa', component: SiyaasaComponent },
   { path: 'seenaa', component: SeenaaComponent },
   { path: 'kitaaba', component: KitaabaLandingComponent },
   { path: 'fayyaa-dubartii-ulfaa', component: DubartiiUlfaaComponent },
   { path: 'fayyaa/odeefannoo-dabalataa-corona', component: GaaffiifDeebiiCoronaComponent },
+  {path: 'siyaasa', component: SiyaasaLandingComponent},
   { path: 'galmaayi', component: SignupComponent },
   { path: 'seeni', component: SigninComponent },
   { path: 'nuquunnamaa', component: ContactComponent },

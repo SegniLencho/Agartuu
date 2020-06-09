@@ -27,7 +27,9 @@ export class HomeComponent implements OnInit {
      { property: "og:site_name", content: "Agartuu" },
      { property: "og:title", content: "Wiirtuu Agartuu"},
      { property: "og:image", content: "https://www.agartuu.com/assets/MyLogo.png"},
-     { property: "og:description", content: "Agartuun marsariitii (Website) odeeffannoo wayitawaa teekinoloojii waliin walqabate garaagaraa wallitti funanuu fi qindeessuun ijaafi gurra uummata oromoo biraan gaha."},
+     { property: "og:description", content: "Agartuu website Afaan oromoo odeefannoo wayitaawaa uummata Oromoo biraan geessudha. Agartuun dhimma hedduu of keessaa qabdi"+
+     "Oromoon akka fayyaan bulu Agartuu fayyaa odeefannoo kenniti. Agatuun Aartii immoo Aartii oromoofi hogbarruu Oromoo cinaa dhaabatti."+
+   "Agartuun   Siyaasa Oromoo fi kanneen biroo waan hedduu of keessaa qabdi.  "},
      { property: "og:url", content: "https://www.agartuu.com/wiirtuu"}
    ]);
   }

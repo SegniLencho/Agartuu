@@ -26,15 +26,17 @@ export class CheckoutComponent implements OnInit {
   checkout() {
     localStorage.setItem('itemQuantity', this.itemQuantity.toString());
     localStorage.setItem('totalCost', this.totalCost)
-    if (this.authService.isLoggedIn) {
-      //ask user to enter shipping address 
-      this.router.navigate(['/shipping'])
+    this.router.navigate(['/shipping'])
 
-    }
-    else {
-      this.router.navigate(['/seeni'])
+    // if (this.authService.isLoggedIn) {
+    //   //ask user to enter shipping address 
+    //   this.router.navigate(['/shipping'])
 
-    }
+    // }
+    // else {
+    //   this.router.navigate(['/seeni'])
+
+    // }
 
     // this.cartIsEmpty = true;
     // localStorage.clear();

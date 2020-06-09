@@ -56,6 +56,9 @@ import { BookComponent } from './gabaa/book/book.component';
 import { CheckoutComponent } from './gabaa/checkout/checkout.component';
 import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-address.component';
 
+import { GooglePlaceModule } from "ngx-google-places-autocomplete";
+import { SiyaasaLandingComponent } from './siyaasa/siyaasa-landing/siyaasa-landing.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -106,6 +109,7 @@ import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-addr
     BookComponent,
     CheckoutComponent,
     ShippingAddressComponent,
+    SiyaasaLandingComponent,
     
 ],
   imports: [
@@ -119,9 +123,9 @@ import { ShippingAddressComponent } from './gabaa/shipping-address/shipping-addr
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     ToastrModule .forRoot(),
-    
-  ],
+    GooglePlaceModule,
 
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
